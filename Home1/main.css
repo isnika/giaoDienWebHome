@@ -24,3 +24,21 @@ body
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     box-sizing: border-box
 }
+
+.square {
+  animation: spin 6s linear infinite ; /* xoay 6 giây 1 vòng */
+}
+
+.diamond {
+  animation: spin 5s linear infinite reverse   ; /* xoay ngược, tốc độ khác */
+}
+
+@keyframes spin 
+{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

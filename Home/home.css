@@ -1,0 +1,18 @@
+body
+{
+    background: linear-gradient(
+        135deg, 
+        rgba(255, 255, 255, 1), 
+        rgba(212, 241, 255, 1), 
+        rgba(174, 227, 255, 1)
+    );
+}
+.tool1
+{   
+    background: linear-gradient(
+        to right, 
+        rgba(210, 203, 203, 0.4), 
+        rgba(108, 104, 104, 0.4));
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-sizing: border-box
+}

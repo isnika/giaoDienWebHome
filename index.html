@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Main Interface</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js" defer></script>
+        <!-- Google Font: Montserrat for logo text -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body 
+            {
+                font-family: 'Montserrat', sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+            .tool1  /* narbar */
+            {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 5%;
+                width: 100%;
+                position: fixed;   /* cố định */
+                top: 0;            /* nằm trên cùng */
+                left: 0;
+                z-index: 1000;
+            }
+            .tool2 /* navbar dưới */
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 5%;
+                width: 100%;
+                position: fixed;   /* cố định */
+                bottom: 0;       /* nằm dưới cùng */
+                left: 0;
+                z-index: 1000;
+            }
+            .frame-logo1
+            {
+                display: flex;
+                flex-direction: column;
+                font-weight: 700;
+                color: black;
+                margin-left:-50px;
+
+            }
+            .maintext-tool1
+            {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 550;
+                font-size: 24px;
+                color:black
+            }
+            .secondtext-tool1
+            {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 550;
+                font-size: 16px;
+                margin-left: 117px;
+                color: black;
+                position: relative;
+                top: 7px;
+
+            }
+            .menu /* khung menu */
+            {
+                display: flex;
+                gap: 20px;
+                padding: 10px 15px;
+                border: 1px solid #aaa;
+                border-radius: 20px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                background: rgba(255, 255, 255, 0.6);
+            }
+            .menu a
+            {
+                text-decoration: none;
+                color: #000000;
+                font-size: 16px;
+            }
+            .frame-icon
+            {
+                display: flex;
+                gap: 20px;
+                padding: 5px 15px;
+                border: 0;
+                border-radius: 20px;
+                background: rgba(255, 255, 255, 0.33);
+                margin-right: -50px;
+            }
+            .menu_icon
+            {
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            .overview
+            {
+                display: flex;
+                gap: 20px;
+                padding: 5px 15px;
+                border: 0;
+                border-radius: 20px;
+                background: rgba(255, 255, 255, 0.33);
+
+            }
+            .theory
+            {
+                display: flex;
+                gap: 20px;
+                padding: 5px 15px;
+                border: 0;
+                border-radius: 20px;
+                background: rgba(255, 255, 255, 0.33);
+            }
+            .simulation
+            {
+                display: flex;
+                gap: 20px;
+                padding: 5px 15px;
+                border: 0;
+                border-radius: 20px;
+                background: rgba(255, 255, 255, 0.33);
+
+            }
+            .stepbystep
+            {
+                display: flex;
+                gap: 20px;
+                padding: 5px 15px;
+                border: 0;
+                border-radius: 20px;
+                background: rgba(255, 255, 255, 0.33);
+
+            }
+            .quiz
+            {
+                display: flex;
+                gap: 20px;
+                padding: 5px 15px;
+                border: 0;
+                border-radius: 20px;
+                background: rgba(255, 255, 255, 0.33);
+
+            }
+            button 
+            {
+                padding: 10px 20px;
+                font-size: 16px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="tool1">
+            <div class = "frame-logo1">
+                <span class="secondtext-tool1">KaTiLa</span>
+                <span class="maintext-tool1">VISUAZATION</span>
+            </div>
+
+            <nav class="menu">
+                <a href="#">Home</a>
+                <a href="#">Community</a>
+                <a href="#">Algorithms</a>
+                <a href="#">History</a>
+                <a href="#">Docs</a>
+                <a href="#">Member</a>
+                
+            </nav>
+            
+            <div class="frame-icon">
+                <span class = "menu_icon">&#9776;</span>
+            </div>
+        </header>
+
+        <header class = "tool2" >
+            <div class = "overview">
+                <span>Overview</span>
+            </div>
+            <div class = "theory">
+                <span>Theory</span>
+            </div>
+            <div class = "simulation">
+                <span>Simulation</span>
+            </div>
+            <div class = "stepbystep">
+                <span>Step by Step</span>
+            </div>
+            <div class = "quiz">
+                <span>Quiz</span>
+            </div>
+
+        </header>
+    </body>
+</html>

@@ -3,131 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>giaoDien2</title>
+        <title>VISUALIZATION</title>
         <link rel="stylesheet" href="home.css">
         <script src="home.js" defer></script>
         <!-- Google Font: Montserrat for logo text -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <style>
-            body 
-            {
-                font-family: 'Montserrat', sans-serif;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                height: 100vh;
-            }
-            .tool1  /* narbar */
-            {
-                position: relative;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 5px 5%;
-                width: 100%;
-                position: fixed;   /* cố định */
-                top: 0;            /* nằm trên cùng */
-                left: 0;
-                z-index: 1000;
-            }
-            .frame-logo1
-            {
-                display: flex;
-                flex-direction: column;
-                font-weight: 700;
-                color: black;
-                margin-left:-50px;
-            }
-            .maintext-tool1
-            {
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 550;
-                font-size: 24px;
-                color:black
-            }
-            .secondtext-tool1
-            {
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 550;
-                font-size: 16px;
-                margin-left: 139px;
-                color: black;
-                position: relative;
-                top: 7px;
-
-            }
-            .menu /* khung menu */
-            {
-                display: flex;
-                gap: 20px;
-                padding: 10px 15px;
-                border: 1px solid #aaa;
-                border-radius: 20px;
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                background: rgba(255, 255, 255, 0.6);
-            }
-            .menu a
-            {
-                text-decoration: none;
-                color: #000000;
-                font-size: 16px;
-            }
-            .frame-icon
-            {
-                display: flex;
-                gap: 20px;
-                padding: 5px 15px;
-                border: 0;
-                border-radius: 20px;
-                background: rgba(255, 255, 255, 0.33);
-                margin-right: -50px;
-            }
-            .menu_icon
-            {
-                font-size: 20px;
-                cursor: pointer;
-            }
-
-            .container 
-            {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr); /* 3 cột */
-                grid-gap: 20px;
-                width: 80%;
-                max-width: 1000px;
-            }
-
-            .box 
-            {
-                background: white;
-                border-radius: 12px;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-                padding: 20px;
-                text-align: center;
-                font-size: 18px;
-                font-weight: 600;
-                transition: transform 0.2s, box-shadow 0.2s;
-            }
-
-            .box:hover 
-            {
-                transform: translateY(-5px);
-                box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-            }
-            button 
-            {
-                padding: 10px 20px;
-                font-size: 16px;
-                margin-top: 20px;
-                cursor: pointer;
-            }
-            
-        </style>
     </head>
     <body>
         <header class="tool1">
@@ -151,7 +31,7 @@
         </header>
 
         <heard class="container">
-            <a href ="../BFS/BFS.html" class="box"><span>BFS - Breadth-first search</span></a>
+            <a href ="../Algorithm/BFS.html" class="box"><span>BFS - Breadth-first search</span></a>
             <a href ="../DFS/DFS.html" class="box"><span>DFS - Depth-First Search</span></a>
             <a href ="../A/A.html" class="box"><span>A* Search Algorithm</span></a>
             <a href ="../minimax/minimax.html" class="box"><span>Minimax</span></a>
@@ -163,7 +43,6 @@
             <a href ="../Home1/index.html" class="box"><span>Kruskal</span></a>
             <a href ="../Home1/index.html" class="box"><span>Prim</span></a>
             <a href ="../Home1/index.html" class="box"><span>Hashing</span></a>
-        </heard>
-            
+        </heard>       
     </body>
 </html>

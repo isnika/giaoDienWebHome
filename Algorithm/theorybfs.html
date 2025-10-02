@@ -3,239 +3,55 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Main Interface</title>
-        <link rel="stylesheet" href="mainBFS.css">
-        <script src="mainBFS.js" defer></script>
+        <title>VISUALIZATION</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="algorithm.css">
+        <link rel="stylesheet" href="frame.css">
+        <script src="main.js" defer></script>
         <!-- Google Font: Montserrat for logo text -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <style>
-            body 
-            {
-                font-family: 'Montserrat', sans-serif;
-                margin: 0;
-                padding: 0;
-                height: auto;
-            }
-            .tool1  /* narbar */
-            {
-                position: fixed;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 5px 5%;
-                width: 100%;
-                top: 0;
-                left: 0;
-                z-index: 1000;
-            }
-            .tool2 /* navbar dưới */
-            {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px 5%;
-                width: 100%;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                z-index: 1000;
-            }
-            .frame-logo1
-            {
-                display: flex;
-                flex-direction: column;
-                font-weight: 700;
-                color: black;
-                margin-left:-50px;
-
-            }
-            .maintext-tool1
-            {
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 550;
-                font-size: 24px;
-                color:black
-            }
-            .secondtext-tool1
-            {
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 550;
-                font-size: 16px;
-                margin-left: 117px;
-                color: black;
-                position: relative;
-                top: 7px;
-
-            }
-            .menu /* khung menu */
-            {
-                display: flex;
-                gap: 20px;
-                padding: 10px 15px;
-                border: 1px solid #aaa;
-                border-radius: 20px;
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                background: rgba(255, 255, 255, 0.6);
-            }
-            .menu a
-            {
-                text-decoration: none;
-                color: #000000;
-                font-size: 16px;
-            }
-            .frame-icon
-            {
-                display: flex;
-                gap: 20px;
-                padding: 5px 15px;
-                border: 0;
-                border-radius: 20px;
-                background: rgba(255, 255, 255, 0.33);
-                margin-right: -50px;
-            }
-            .menu_icon
-            {
-                font-size: 20px;
-                cursor: pointer;
-            }
-
-            .overview
-            {
-                display: flex;
-                gap: 20px;
-                padding: 5px 15px;
-                border: 0;
-                border-radius: 20px;
-                background: rgba(255, 255, 255, 0.33);
-
-            }
-            .theory
-            {
-                display: flex;
-                gap: 20px;
-                padding: 5px 15px;
-                border: 0;
-                border-radius: 20px;
-                background: rgba(255, 255, 255, 0.33);
-            }
-            .simulation
-            {
-                display: flex;
-                gap: 20px;
-                padding: 5px 15px;
-                border: 0;
-                border-radius: 20px;
-                background: rgba(255, 255, 255, 0.33);
-
-            }
-            .stepbystep
-            {
-                display: flex;
-                gap: 20px;
-                padding: 5px 15px;
-                border: 0;
-                border-radius: 20px;
-                background: rgba(255, 255, 255, 0.33);
-
-            }
-            .quiz
-            {
-                display: flex;
-                gap: 20px;
-                padding: 5px 15px;
-                border: 0;
-                border-radius: 20px;
-                background: rgba(255, 255, 255, 0.33);
-
-            }
-            /* ly thuyet cua thuat toan */
-            .container 
-            {
-                max-width: 1000px;
-                margin: auto;
-                background: white;
-                border-radius: 12px;
-                padding: 30px;
-                margin-top: 80px;    /* bằng chiều cao .tool1 */
-                margin-bottom: 80px; /* bằng chiều cao .tool2 */
-                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            }
-            h1 
-            {
-                margin-top: 0;
-                font-size: 2rem;
-                color: #0077b6;
-            }
-            h2 
-            {
-                margin-top: 20px;
-                color: #0096c7;
-            }
-            img 
-            {
-                display: block;
-                margin: 20px auto;
-                max-width: 100%;
-                height: auto;
-            }
-            pre 
-            {
-                background: #f5f5f5;
-                padding: 12px;
-                border-radius: 8px;
-                overflow-x: auto;
-            }
-            @media (max-width: 768px) 
-            {
-                .container 
-                {
-                    padding: 15px;
-                }
-                h1 
-                {
-                    font-size: 1.5rem;
-                }
-            }
-            /*khac */
-            button 
-            {
-                padding: 10px 20px;
-                font-size: 16px;
-                margin-top: 20px;
-                cursor: pointer;
-            }
-        </style>
     </head>
     <body>
         <header class="tool1">
             <div class = "frame-logo1">
                 <span class="secondtext-tool1">KaTiLa</span>
-                <span class="maintext-tool1">VISUAZATION</span>
+                <span class="maintext-tool1">VISUALIZATION</span>
             </div>
 
             <nav class="menu">
-                <a href="#">Home</a>
-                <a href="#">Community</a>
-                <a href="#">Algorithms</a>
-                <a href="#">History</a>
-                <a href="#">Docs</a>
-                <a href="#">Member</a>
-                
+                <ul>
+                    <li><a href="../Home/indexhome.html">Home</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li class="dropdown">
+                        <a href="#">Algorithms ▼</a>
+                        <div class="dropdown-content">
+                            <a href="../Algorithm/overviewbfs.html">BFS</a>
+                            <a href="../Algorithm/overviewdfs.html">DFS</a>
+                            <a href="../Algorithm/overviewdij.html">Dijkstra</a>
+                            <a href="../Algorithm/overviewa.html">A*</a>
+                            <a href="../Algorithm/overviewfc.html">Foward Chaining</a>
+                            <a href="../Algorithm/overviewminimax.html">Mini Max</a>
+                            <a href="../Algorithm/overviewffill.html">Flood Fill</a>
+                        </div>
+                    </li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Member</a></li>
+                </ul>
             </nav>
-            
+
+        
             <div class="frame-icon">
                 <span class = "menu_icon">&#9776;</span>
             </div>
         </header>
 
         <header class="tool2">
-            <a href="../BFS/overview1.html" class="overview"><span>Overview</span></a>
-            <a href="../BFS/theory.html" class="theory"><span>Theory</span></a>
-            <a href="../BFS/simulation.html" class="simulation"><span>Simulation</span></a>
-            <a href="../BFS/stepbystep.html" class="stepbystep"><span>Step by Step</span></a>
-            <a href="../BFS/quiz.html" class="quiz"><span>Quiz</span></a>
+            <a href="../Algorithm/overviewbfs.html" class="overview"><span>Overview</span></a>
+            <a href="../Algorithm/theorybfs.html" class="theory"><span>Theory</span></a>
+            <a href="../Algorithm/simulationbfs.html" class="simulation"><span>Simulation</span></a>
+            <a href="../Algorithm/stepbystepbfs.html" class="stepbystep"><span>Step by Step</span></a>
+            <a href="../Algorithm/quizbfs.html" class="quiz"><span>Quiz</span></a>
         </header>
 
         <div class="container">
